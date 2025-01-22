@@ -16,7 +16,7 @@ import java.lang.annotation.Inherited;
 public class SumarServlet extends HttpServlet {
     @Inject
     private Operaciones servicio;
-
+    //Generar el metodo con click derecho, generate y override methods
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int ret = servicio.sumar(9, 14);
